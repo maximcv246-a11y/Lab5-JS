@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>lab5</title>
+</head>
+<body>
+    <form id="my_form">
+        <label>введите транзакцию:</label>
+        <br>
+        <input type="number" name="tr_amount" placeholder="сумма">
+        <br>
+        <input type="text" name="tr_category" placeholder="категория">
+        <br>
+        <input type="text" name="tr_description" placeholder="краткое описание">
+        <br>
+        <button type="submit">отправить</button>
+    </form>
+    <br>
+    <br>
+    <table id="transactions-table">
+        <thead>
+            <tr>
+                <td>Дата и время</td>
+                <td>Категория транзакции</td>
+                <td>Краткое описание транзакции</td>
+                <td>Действие</td>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+        
+    </table>
+    <br>
+    <h2>
+    Общая сумма:
+    <span id="total">0</span>
+    </h2>
+    <br>
+    <h3>Полное описание:</h3>
+    <div id="full-description">
+        Нажмите на транзакцию
+    </div>
+    <script src="src/index.js" type="module"></script>
+</body>
+</html>
